@@ -23,7 +23,7 @@
 				    	</div>
 				    	<?php } ?>
 
-					    <?php /* if (have_posts()) : while (have_posts()) : the_post(); ?>
+					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						<div class="video-container">
@@ -35,7 +35,7 @@
 					    </article> <!-- end article -->
 					
 					    <?php endwhile; ?>	
-					
+					    
 					    <?php else : ?>
 					    
 					        <article id="post-not-found" class="hentry clearfix">
@@ -50,12 +50,14 @@
 					        	</footer>
 					        </article>
 					
-					    <?php endif; */?>
+					    <?php endif; ?>
 			
 				    </div> <!-- end #main -->
 				    
 				</div> <!-- end #inner-content -->
     
 			</div> <!-- end #content -->
-			<div id="about"><?php show_post("about"); ?></div>
+			<div id="about">
+				<div class="pullRight"><a href="#about">Close</a></div>
+				<?php show_post("about"); ?></div>
 <?php get_footer(); ?>

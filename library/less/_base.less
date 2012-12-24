@@ -40,6 +40,9 @@ body {
 	line-height: 1.5;
 	color: #565656;
 	background-color: #000000;
+
+	font-family: @sans-serif;
+
 }
 
 /********************
@@ -113,9 +116,9 @@ body {
 
 #about {
 	position: absolute;
+	left: 0; top: 0;
 	color: white;
-	width: 80%;
-	height: 60%;
+	width: 100%;
 	margin: 10%; padding: 10px;
 
 	overflow-y: scroll;
@@ -125,25 +128,49 @@ body {
 	display: none;
 }
 
-#playButtons {
-	float: right;
+#socialMedia {
+	position: absolute;
+	top: 0; right: 0;
 	clear: both;
-	top: 0;
-	right: 0;
 	text-align: right;
 	
 	a {
-		padding: 20px
-		width: 10%;
+		padding: 10px;
+		width: auto;
 		min-width: 42px;
 		height: auto;
+		z-index:9999999;
 
 		&:hover {
 		background: rgba( 255,255,255, .6);
 		color: black;
 	}
 	img {
-		width: 10%;
+		width: 30%;
+		}
+	}
+
+}
+
+#playButtons {
+	position: absolute;
+	bottom: 0; right: 0;
+	clear: both;
+	text-align: right;
+	
+	a {
+		padding: 10px;
+		width: auto;
+		min-width: 42px;
+		height: auto;
+		z-index:9999999;
+
+		&:hover {
+		background: rgba( 255,255,255, .6);
+		color: black;
+	}
+	img {
+		width: 30%;
 		}
 	}
 
@@ -229,31 +256,32 @@ h5, .h5 {
 
 .header {
 	position: absolute;
-	top: 0; left: 0;
-	z-index: 9999;
+	top: 20px; left: 0;
+	z-index: 99999;
 
 	width: 100%;
 
 	#inner-header {}
 	
 	#logo { 
+		width: 100%;
+		float: left;
 		a {
 			color: white;
 		}
 
 		img {
-			width: 20%;
+			
 		}
 
 	}
 
 	nav {
-		float: right;
-		width: 40%;
+		width: 100%;
 
 
 		ul.nav {
-			float: right;
+			width: 100%;
 			background: transparent;
 			li {
 				padding: 10px 20px 10px 20px;
@@ -282,7 +310,10 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
+	float: left;
+
+
+
 	border-bottom: 0;
 
 	li {
