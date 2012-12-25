@@ -12,7 +12,7 @@ var dube = dube || {};
 dube.about = false;
 dube.play = true;
 dube.mute = false;
-dube.main = 'wp-content/themes/eddiemachado-bones-bd0ff66/'
+dube.main = 'wp-content/themes/dube/'
 dube.img = dube.main + 'images/';
 // IE8 ployfill for GetComputed Style (for Responsive Script below)
 if (!window.getComputedStyle) {
