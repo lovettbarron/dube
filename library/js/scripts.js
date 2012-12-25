@@ -74,7 +74,8 @@ jQuery(document).ready(function($) {
 
     callPlayer("player", function() {
         // This function runs once the player is ready ("onYouTubePlayerReady")
-        callPlayer("player", "playVideo");
+        if(!(navigator.userAgent.match(/iPhone/i)) || !(navigator.userAgent.match(/iPod/i)))
+            callPlayer("player", "playVideo");
         callPlayer("player", "mute");
     });
     // When the player is not ready yet, the function will be queued.
