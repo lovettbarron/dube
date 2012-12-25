@@ -125,9 +125,9 @@ jQuery(document).ready(function($) {
     });
  
 
-    $.get( dube.main + 'video.php?p=' + dube.mostRecent, function(data) {
-        $('#main').html(data);
-    });
+    // $.get( dube.main + 'video.php?p=' + dube.mostRecent, function(data) {
+    //     $('#main').html(data);
+    // });
 
 }); /* end of as page load scripts */
 
