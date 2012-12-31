@@ -337,32 +337,38 @@ mobile. Make sure to double check these!
 	display: block;
 	position: absolute;
 	top: 0; right: 0;
-	width: 5%;
-	clear: both;
+	margin: 10px;
+	width: 20%;
+	clear: right;
 	text-align: right;
+	z-index:9999999;
 	
-	a {
-		padding: 10px;
-		float:right;
-		width: auto;
-		min-width: 42px;
-		height: auto;
-		z-index:9999999;
-		line-height:1em;
-		font-size: 3em;
-		text-decoration: none;
+	ul {
 
-		&:hover {
-		background: rgba( 255,255,255, .6);
-		color: black;
-	}
-	img {
-		width: 100%!important;
+		li {
+			width: 5%;
+			margin: 2% 0 2% 0;
+			clear: both;
+			float: right;
+			a {
+				float:right;
+				width: auto;
+				min-width: 42px;
+				height: auto;
+
+				&:hover {
+				background: rgba( 255,255,255, .6);
+				color: black;
+				}
+
+				img {
+					width: 100%!important;
+				}
+			
+			}
+
 		}
 	}
-
-
-
 }
 
 

@@ -20,15 +20,23 @@
 
 
 			<div id="socialMedia">
-					<a class="twitter" href="#">
-						<img src="<?php echo get_bloginfo('template_directory');?>/images/twt.png">
-					</a>
-					<a class="facebook" href="#">
-						<img src="<?php echo get_bloginfo('template_directory');?>/images/fb.png">
-					</a>
-					<a class="youtube" href="#">
-						<img src="<?php echo get_bloginfo('template_directory');?>/images/youtube.png">
-					</a>
+				<ul>
+					<li>
+						<a class="twitter" href="https://twitter.com/justindubemusic">
+							<img src="<?php echo get_bloginfo('template_directory');?>/images/twt.png">
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="http://www.facebook.com/JustinDubeMusic">
+							<img src="<?php echo get_bloginfo('template_directory');?>/images/fb.png">
+						</a>
+					</li>
+					<li>
+						<a class="youtube" href="http://youtube.com/user/everleamusic">
+							<img src="<?php echo get_bloginfo('template_directory');?>/images/youtube.png">
+						</a>
+					</li>
+				</ul>
 			</div>
 
 		</div> <!-- end #container -->

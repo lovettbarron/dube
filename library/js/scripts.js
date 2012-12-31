@@ -76,6 +76,8 @@ jQuery(document).ready(function($) {
         // This function runs once the player is ready ("onYouTubePlayerReady")
         if(!(navigator.userAgent.match(/iPhone/i)) || !(navigator.userAgent.match(/iPod/i)))
             callPlayer("player", "playVideo");
+        else
+            callPlayer("player", "pauseVideo");
         callPlayer("player", "mute");
     });
     // When the player is not ready yet, the function will be queued.
@@ -90,6 +92,10 @@ jQuery(document).ready(function($) {
         if(!dube.about) $(target).fadeIn(400);
         else $(target).fadeOut(400);
         dube.about = !dube.about;
+    })
+
+    $('li > a').on('hover',function() {
+        console.log('hovering')
     })
 
     $('a[href="#next"]').click(function(e) {
